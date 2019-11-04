@@ -1,0 +1,441 @@
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+#one-true { overflow: hidden; }
+#one-true .col {
+  width: 27%;
+  padding: 30px 3.15% 0;
+  float: left;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+#one-true .col:nth-child(1) { margin-left: 33.3%; background: #ccc; }
+#one-true .col:nth-child(2) { margin-left: -66.3%; background: #eee; }
+#one-true .col:nth-child(3) { left: 0; background: #eee; }
+#one-true p { margin-bottom: 30px; } /* Bottom padding on col is busy */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {background-color: #f1f1f1}
+.show {display:block;}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: hidden;
+    border-width: 1px;
+}
+a.nav:link, a.nav:visited {
+    display: block;
+    width: 180px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #3cb0fd;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a.nav:hover{
+    color: #000;
+    cursor: pointer;
+}
+a.nav:active {
+    background-color: #FFFFFF;
+    color: #3cb0fd;
+}
+.footer
+{   text-align:center;
+    color: red;
+    display:block}
+table.sel {
+    width: 90%;
+}
+td.sel {
+    vertical-align: central;
+    width: 33%;
+}
+.btn2 {
+  font-family: Cambria;
+  width: auto;
+  min-width: 250px;
+  color: #ffffff;
+  background: #0094ff;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn2:hover {
+  color: #0094ff;
+  background: #ffffff;
+}
+.btn3 {
+	font-size: 12px;
+	text-transform: capitalize;
+	margin: 10px 5px;
+	padding: 3px 5px;
+}
+.btn3:hover {
+	background: #bbb;
+}
+label:hover {
+	color: #666;
+}
+.plotBlockSmall{
+    border-width:5px;
+    width:800px;
+    height:300px;
+	box-sizing:  border-box;
+	padding: 10px 15px 15px 15px;
+	margin: 10px 15px 30px 30px;
+	border: 0px solid #000;
+    }
+.plotBlock {
+	width		: 100%;
+	height		: 500px;
+	font-size	: 11px;
+    border: 1px solid #000;
+}
+/*.plotBlock{
+    border-width:5px;
+    width:540px;
+    height:400px;
+	box-sizing:  border-box;
+	padding: 10px 15px 15px 15px;
+	margin: 10px 15px 30px 30px;
+	border: 1px solid #000;
+    }
+        */
+.jumbotron
+    {padding:30px 30px 30px 30px;
+     margin: 5px 5px 5px  5px;
+     color:inherit;
+     border-radius:6px;
+     /*background:  url(../image/Microgrid2.bmp) 100% right no-repeat;*/
+     background-color:#decdcd;
+     height:400px;
+     font-family: Cambria;
+    }
+p.titles {
+  background-color: inherit;
+  color: #000000;
+  padding: 2px;
+  margin: 2px;
+  font-family: Cambria;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: normal;
+  text-decoration: none;
+  position: static;
+}
+.notes {
+  background-color: #ddd;
+  color: #000000;
+  padding: 2px;
+  margin: 2px;
+  font-family: Cambria;
+  font-style: normal;
+  font-variant: normal;
+  text-decoration: none;
+  font-size: 20px;
+  position: static;
+  line-height:125%;
+}
+table.cost {
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: central;
+    text-align:center;
+}
+table#t01 {
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: central;
+    text-align:center;
+    width: 100%;
+}
+table#t01 tr th{
+    padding:5px;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#000;
+}
+table#t01 th	{
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    width: 25%;
+}
+table#t01 caption	{
+    font-size: 20px;
+    line-height:200%;
+}
+.xbtooltip {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  padding: 5px;
+}
+/*-----------------------------------------------------*/
+/* Tariff label */
+.config-label {
+	position: relative;
+	display: block;
+	*zoom:1;
+	padding: 3px 5px;
+	margin-bottom: 5px;
+}
+.load-label {
+	position: relative;
+	display: block;
+	*zoom:1;
+	padding: 3px 5px;
+	margin-bottom: 5px;
+}
+.tariff-label {
+	position: relative;
+	display: inline;
+	background: #ccc;
+	padding: 3px 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	min-width: 120px;
+	*zoom:1;
+	text-align: left;
+	cursor: pointer;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.tariff-label:hover {
+	background: red;
+	color: white;
+}
+.tariff-cross {
+	position: absolute;
+	right: 5px;
+	top: 7px;
+	font-size: 13px;
+	padding-left: 5px;
+}
+.stripped {
+	background: #ddd;
+}
+.help-button {
+	position: relative;
+	display: inline;
+	top: -3px;
+	left: -25px;
+	padding: 1px 5px;
+	background:#ccc;
+	color: white;
+	text-align:center;
+	border: 1px solid #999;
+}
+.help-button:hover {
+	color: black;
+	background: white;
+	cursor:help;
+}
+/*.help-button-small {
+	position: relative;
+	display: inline;
+	top: -3px;
+	left: 10px;
+	padding: 1px 5px;
+	background:#ccc;
+	color: white;
+	text-align:center;
+	border: 1px solid #999;
+	font-size: 12px;
+}
+.help-button-small:hover {
+	color: black;
+	background: white;
+	cursor:help;
+}*/
+.section-container {
+	border:1px solid #5cb85c;
+	margin-top:25px;
+	padding:0;
+}
+.section-title {
+	position:relative;
+	width:100%;
+	padding-top:5px;
+	background:#5cb85c;
+}
+.help-block {
+	color:#5cb85c;
+	font-size: 0.9em;
+	padding: 10px 20px;
+}
+.btn-special {
+	position: relative;
+	/*text-align: center;*/
+	margin: 10px 20px;
+}
+.btn-special .row {
+	margin: 5px 20px;
+}
+.my-help {
+	position: absolute;
+	top: 110%;
+	left:0;
+	background: #dfdfdf;
+	border:1px solid #aaa;
+	z-index:99999;
+	opacity:0;
+	max-width:200px;
+	font-size: 12px;
+	padding: 7px;
+}
+.my-tooltip {
+	position: absolute;
+	top: 110%;
+	left:0;
+	background: #222;
+	border:1px solid #ccc;
+	color: white;
+	z-index:99999;
+	opacity:0;
+	max-width:200px;
+	font-size: 12px;
+	padding: 5px;
+	text-align: center;
+}
+.load-numbers {
+	color: #5cb85c;
+	font-weight: bold;
+}
+.delete-batt-config {
+	background: #ccc;
+	color: black;
+	display: none;
+	position:inline;
+	margin-left: 10px;
+	padding: 1px 4px;
+	margin-top: -10px;
+	font-size: 12px;
+	display:none;
+}
+.config-label:hover .delete-batt-config {
+	display:inline;
+}
+.delete-batt-config:hover {
+	cursor: pointer;
+	background: red;
+	color: white;
+}
+.warning-message {
+	display: block;
+	font-weight:bold;
+	color: red;
+}
+.odd-row {
+	background:#F9F9F9;
+}
+
+.modal-header {
+	background: #ddd !important;
+}
+.modal-footer {
+	background: #eee !important;
+}
+.import-row {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.import-label {
+	position: relative;
+	float: left;
+	width: 30%;
+	text-align: right;
+	margin-right: 10px;
+	padding-top:2.5px;
+	margin-top: 10px;
+}
+.import-input {
+	position: relative;
+	float: left;
+	width: 60%;
+	text-align: left;
+	margin-top: 10px;
+}
+.import-input-control {
+	padding: 2.5px 5px;
+}
+#TuneRunSpin, #EMSRunSpin {
+	display: none;
+}
+
+#batteryview1 {
+	width		: 1000px;
+	height		: 400px;
+}
+
+#batteryview2 {
+	width		: 1000px;
+	height		: 400px;
+}
+
+#batteryview3 {
+	width		: 1000px;
+	height		: 400px;
+}
+
+#loadview1 {
+	width		: 1000px;
+	height		: 400px;
+}
+
+#loadview2 {
+	width		: 1000px;
+	height		: 400px;
+}
+
+#loadview3 {
+	width		: 1000px;
+	height		: 400px;
+}
+
+#cycleview {
+	width		: 1000px;
+	height		: 500px;
+}
