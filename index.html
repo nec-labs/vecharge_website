@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>NEC EMS Login Form</title>
+<title>VE-Charge Website</title>
 
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/MyStyleSheet.css">
@@ -29,7 +29,7 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand active" href="LoginForm.jsp"><i class="fa fa-plug"></i> NEC EMS BTM Application</a>
+					<a class="navbar-brand active" href="index.html"><i class="fa fa-plug"></i> VE-Charge Website</a>
 				</div>
 			</div>
 		</nav>
@@ -42,46 +42,22 @@
 	
 	<!-- Page Content -->
 	<div class="container" id="parentTab" style="text-align: center; margin-left: 10%; margin-right: 10%; width: 80%; overflow-x: hidden">
-		<h3 style="display:none"><b>This is updated version with life time analysis. Please do not use dot "." or any other special characters in your username. 
-			Also, create another account if the DB allocated to your account gets full and the tool becomes slow. </b></h3>
 		<h2>
-			<span class="label label-success ">NEC Online Tool for Behind-The-Meter (BTM) Energy Management System (EMS) for C&I Customers</span>
+			<span class="label label-success ">VE-Charge: Behind-The-Meter (BTM) and EV Charging Management System for C&I Customers</span>
 		</h2>
 		<hr>
-		<p style="font-size:14px">* Please note that a regular EMS maintenance is scheduled every Fridays 4-5 pm Pacific Time.<br>
+		<!-- <p style="font-size:14px">* Please note that a regular EMS maintenance is scheduled every Fridays 4-5 pm Pacific Time.<br>
 		Also, old simulation results before one month ago are deleted periodically so please rerun the simulation again to obtain the updated results. </p>
 		<p style="font-size:14px">* If you would like to create an account, please contact Ratnesh Sharma (Email: ratnesh@nec-labs.com). <br>
-		For technical details or issues, please contact Kiyoshi Nakayama (Email: knakayama@nec-labs.com).</p>
-		
-		
+		For technical details or issues, please contact Kiyoshi Nakayama (Email: knakayama@nec-labs.com).</p> -->
+		<p>For more detail, please contact Ratnesh Sharma (Email: ratnesh@nec-labs.com). <br></p>
 
-		<div class="col-sm-4" style="display:none">
-			<div class="container">
-				<div class="col-sm-4 col-md-4">
-					<h3 style="text-align: center"> 
-						Sign in
-						<a href="#" title="Dashboard Access" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Please contact NEC administrator for account information.">
-							<i class="fa fa-question-circle"></i>
-						</a>
-					</h3>
-					<form action="/EMSOperationsEngine/EV_EMS_Engine/NECEMS_Main.jsp" method="post" class="form-signin" style="text-align: left">
-						<label>Username :</label><br> 
-						<input class="form-control" id="name" name="uname" placeholder="Enter Username" type="text" required autofocus><br> 
-						<label>Password :</label><br>
-						<input class="form-control" id="password" name="psw" placeholder="Enter Password" type="password" required><br>
-						<input class="btn btn-lg btn-primary btn-block" name="submit" type="submit" value=" Login "> 
-					</form>
-					<br>
-				</div>
-			</div>
-		</div>
-		
 		<table align="center">
 			<tr>
 				<td width="50%" align="right">
-					<img src="./image/NEC_EMS_Service.png" class="img-rounded" alt="Microgrid Diagram" height="350px" width="60%">
+					<img src="./image/NEC_EMS_Service.png" class="img-rounded" alt="Microgrid Diagram" height="300px" width="500px">
 				</td>				
-				<td width="50%" valign="top" align="left">
+				<!-- <td width="50%" valign="top" align="left">
 					<div class="">
 						<div class="">
 							<h3 style="text-align: center"> 
@@ -100,31 +76,29 @@
 							<br>
 						</div>
 					</div>				
-				</td>
-				<!--<td width="30%" valign="top">  valign="top"
+				</td> -->
+				<td width="30%" valign="top"> 
 					
-					<h3>Resources 
+					<h4>Managed EV Charging Brochure (VE-Charge) 
 						<a href="#" title="Resources Guide" data-toggle="popover" data-placement="top" data-trigger="focus" 
 							data-content="Please click the images below to download.">
 							<i class="fa fa-question-circle"></i>
 						</a>
-					</h3>
+					</h4>
 					
 					<br>
-					<a href="./resources/A Comprehensive Guide to EV Managed Charging_Supplemental Materials_FINAL_20190502.xlsx">
-						<img src="./image/SEPA.png" class="img-rounded" alt="Microgrid Diagram" width="70%"> </a>
-					<br><br>Comprehensive Guide to EV Infrastructure 
+					<a href="./resources/TechCatalog_Energy.pdf">
+						<img src="./image/green_button.png" class="img-rounded" alt="Microgrid Diagram" width="50%"> </a>
+					<br><br>
 					
 					<br>
-
-					<!-- <li><a href="./resources/proposal-to-NECX3.0.pdf">Proposal </a></li> 
 					
-				</td>-->
+				</td>
 			</tr>		
 		</table>
 	</div>
 
-	<footer>
+	<footer style="display:none;">
 		<div align="center">
 			<h5>
 				<img style="vertical-align: middle" src="image/NECLA_logo.jpg" alt="NEC Labs Logo" height="72" />
